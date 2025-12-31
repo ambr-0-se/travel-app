@@ -1,0 +1,32 @@
+{
+  "name": "dubai-oman-family-explorer",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:full": "concurrently \"npm run dev\" \"npm run server:dev\"",
+    "build": "vite build",
+    "preview": "vite preview",
+    "server:dev": "cd server && npm run dev",
+    "server:start": "cd server && npm start",
+    "server:install": "cd server && npm install",
+    "deploy:vercel": "npx vercel",
+    "deploy:vercel:prod": "npx vercel --prod",
+    "deploy:netlify": "npm run build && npx netlify-cli deploy --prod --dir=dist",
+    "deploy:surge": "npm run build && npx surge dist/"
+  },
+  "dependencies": {
+    "@google/genai": "^1.34.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "concurrently": "^9.1.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0",
+    "vite-plugin-pwa": "^1.2.0"
+  }
+}

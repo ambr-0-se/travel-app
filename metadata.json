@@ -1,0 +1,7 @@
+{
+  "name": "Dubai-Oman Family Explorer",
+  "description": "A high-end travel companion for families exploring the UAE and Oman, featuring dynamic itineraries, multi-currency financial management, and a context-aware AI assistant.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
